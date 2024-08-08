@@ -1,17 +1,16 @@
-const config = require(__dirname + '/../config/config.json');
+require('dotenv').config();
 const Sequelize = require('sequelize');
 
 const env = process.env.NODE_ENV || 'development';
-const dbConfig = config[env];
+
 
 const sequelize = new Sequelize(
-  dbConfig.database,
-  dbConfig.username,
-  dbConfig.password,
+ process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PW,
   {
-    host: dbConfig.host,
-    dialect: dbConfig.dialect,
-    logging: false,
+    host: 'localhost',
+    dialect: "postgres"
   }
 );
 
