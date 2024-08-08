@@ -201,3 +201,10 @@ https://github.com/user-attachments/assets/0ebf33d8-7317-4ef8-a13a-9b22f810b9a4
 * `Product` belongs to `Category`, and `Category` has many `Product` models.
 
 * `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models through the `ProductTag` model.
+
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request with your changes.
+
+## License
+This project is licensed under the MIT License.
